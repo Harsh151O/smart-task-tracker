@@ -6,6 +6,10 @@ public class Main {
         TaskManager taskManager = new TaskManager();
         boolean running = true;
 
+        System.out.println("==========================================");
+        System.out.println("  Smart Student Task & Productivity Tracker ");
+        System.out.println("==========================================");
+
         
         while (running) {
             System.out.println("\nSelect an option:");
