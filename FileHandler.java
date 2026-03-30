@@ -6,16 +6,7 @@ public class FileHandler {
     private static final String FILE_NAME = "tasks.txt";
 
     
-    public static void saveTasks(List<Task> tasks) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
-            for (Task task : tasks) {
-                writer.write(task.toFileFormat());
-                writer.newLine();
-            }
-        } catch (IOException e) {
-            System.out.println("Error saving tasks to file: " + e.getMessage());
-        }
-    }
+  
 
     
     public static List<Task> loadTasks() {
