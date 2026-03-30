@@ -89,6 +89,14 @@ public class TaskManager {
         System.out.printf("Productivity:    %.2f%%\n", productivity);
         System.out.println("---------------------------");
     }
+ private Task findTaskById(int id) {
+        for (Task task : tasks) {
+            if (task.getId() == id) {
+                return task;
+            }
+        }
+        return null;
+    }
 
     
    
