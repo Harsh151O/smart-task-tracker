@@ -91,15 +91,7 @@ public class TaskManager {
     }
 
     
-    private Task findTaskById(int id) {
-        for (Task task : tasks) {
-            if (task.getId() == id) {
-                return task;
-            }
-        }
-        return null;
-    }
-
+   
     
     private void saveChanges() {
         FileHandler.saveTasks(tasks);
