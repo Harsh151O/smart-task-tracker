@@ -10,7 +10,7 @@ public class Main {
         System.out.println("  Smart Student Task & Productivity Tracker ");
         System.out.println("==========================================");
 
-        
+        // It will stop at when we select option 6 on switch case and all these 6 option that user can interact with program 
         while (running) {
             System.out.println("\nSelect an option:");
             System.out.println("1. Add Task");
