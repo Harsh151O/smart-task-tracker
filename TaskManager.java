@@ -6,7 +6,7 @@ public class TaskManager {
 
     public TaskManager() {
         
-        tasks = FileHandler.loadTasks();
+       
         nextId = calculateNextId();
     }
 
