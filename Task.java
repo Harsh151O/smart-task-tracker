@@ -14,7 +14,7 @@ public class Task {
     }
 
     // Getters and Setters
-    public int getId() { return id; }
+
     public String getName() { return name; }
     public String getDeadline() { return deadline; }
     public String getPriority() { return priority; }
