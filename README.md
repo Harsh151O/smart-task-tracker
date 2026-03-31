@@ -1,6 +1,12 @@
 # smart-task-tracker
 # Smart Student Task & Productivity Tracker 
 
+## Student Details
+- Name: Harsh Vardhan Raj( 24BAI10851 )
+- Course: Open Source Software
+- Project Title: smart-task-tracker
+
+
 A robust, console-based Java application designed to help students manage their daily academic tasks, track deadlines, and monitor their overall productivity.
 
 ##  Features
