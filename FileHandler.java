@@ -5,7 +5,7 @@ import java.util.List;
 public class FileHandler {
     private static final String FILE_NAME = "tasks.txt";
 
-    
+    // this function will save task i memeory
     public static void saveTasks(List<Task> tasks) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
             for (Task task : tasks) {
@@ -17,7 +17,7 @@ public class FileHandler {
         }
     }
 
-    
+    //this function will display the list that have task
     public static List<Task> loadTasks() {
         List<Task> tasks = new ArrayList<>();
         File file = new File(FILE_NAME);
