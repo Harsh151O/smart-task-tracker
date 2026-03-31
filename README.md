@@ -6,31 +6,37 @@
 - Course: Open Source Software
 - Project Title: smart-task-tracker
 
-A complete Java-based productivity tool designed to help students manage academic deadlines and track their daily efficiency.
 
-## Project Overview
-This project solves the real-world problem of student "task-overload." It allows users to digitize their to-do lists, assign priorities, and see a calculated productivity score to stay motivated.
 
-## Course Concepts Applied (Evaluation Criteria)
-To meet the course requirements, this project implements the following Core Java concepts:
-* **Object-Oriented Programming (OOP):** Uses encapsulation with private attributes and public getters/setters in the `Task` class.
-* **Collections Framework:** Utilizes `ArrayList` to manage a dynamic list of tasks efficiently.
-* **File Handling (I/O):** Implements `BufferedReader` and `BufferedWriter` to ensure data persistence in a `tasks.txt` file.
-* **Exception Handling:** Uses `try-catch` blocks to handle invalid user inputs and file-reading errors safely.
-* **Modular Logic:** Separates concerns into Model (`Task`), Logic (`TaskManager`), Utility (`FileHandler`), and Driver (`Main`) classes.
+A professional Core Java console application designed to help students manage academic deadlines, categorize tasks by priority, and track their overall productivity through real-time analytics.
 
-##  Features
-* **Add Tasks:** Set names, deadlines, and priorities (High/Medium/Low).
-* **Track Status:** Mark tasks as "Completed" by their unique ID.
-* **Persistence:** Tasks remain saved even after closing the program.
-* **Productivity Report:** Automatic calculation of your task completion percentage.
+##  Problem Statement (Why this matters)
+Students often face "information overload" with multiple assignments and deadlines. This project solves that by providing a centralized system to digitize tasks and monitor completion rates, which is a real-world necessity for academic success.
 
-##  How to Set Up and Run
-*Someone who has never seen this project can run it by following these steps:*
+## Core Course Concepts Applied
+This project demonstrates proficiency in the following Java areas:
+* **Object-Oriented Programming (OOP):** Uses a modular class structure (Model-Logic-Utility) with encapsulation.
+* **Collections Framework:** Implements `ArrayList` for dynamic data management.
+* **File I/O Handling:** Uses `BufferedReader` and `BufferedWriter` to ensure data persists in `tasks.txt` after the program exits.
+* **Exception Handling:** Robust `try-catch` blocks to manage user input errors and file processing.
+* **Control Flow:** Complex menu-driven logic using `while` loops and `switch-case` statements.
 
-1. **Prerequisites:** Ensure you have the Java Development Kit (JDK) installed.
-2. **Download:** Clone this repository or download the `.java` files.
-3. **Compile:** Open your terminal/command prompt in the project folder and type:
+##  Key Features
+* **Task Management:** Create, view, and delete tasks with unique IDs.
+* **Status Tracking:** Mark tasks as "Completed" to update the database.
+* **Priority Levels:** Assign High, Medium, or Low priority to stay organized.
+* **Productivity Analytics:** Displays a report showing total tasks vs. completed tasks with a percentage score.
+
+##  Project Organization
+* `Task.java` - **Model Class:** Defines attributes like ID, Name, and Priority.
+* `TaskManager.java` - **Business Logic:** Handles all calculations and list modifications.
+* `FileHandler.java` - **Utility Class:** Manages permanent data storage and loading.
+* `Main.java` - **Driver Class:** The entry point and interactive menu.
+
+##  Setup & Execution (Usability)
+*Follow these steps to run the project in any terminal:*
+
+1. **Download/Clone:** Ensure all four `.java` files are in the same folder.
+2. **Compile:** Run the following command:
    ```bash
    javac *.java
-   git clone [https://github.com/Harsh1510/smart-task-tracker.git](https://github.com/Harsh1510/smart-task-tracker.git)
