@@ -6,40 +6,31 @@
 - Course: Open Source Software
 - Project Title: smart-task-tracker
 
+A complete Java-based productivity tool designed to help students manage academic deadlines and track their daily efficiency.
 
-A robust, console-based Java application designed to help students manage their daily academic tasks, track deadlines, and monitor their overall productivity.
+## Project Overview
+This project solves the real-world problem of student "task-overload." It allows users to digitize their to-do lists, assign priorities, and see a calculated productivity score to stay motivated.
+
+## Course Concepts Applied (Evaluation Criteria)
+To meet the course requirements, this project implements the following Core Java concepts:
+* **Object-Oriented Programming (OOP):** Uses encapsulation with private attributes and public getters/setters in the `Task` class.
+* **Collections Framework:** Utilizes `ArrayList` to manage a dynamic list of tasks efficiently.
+* **File Handling (I/O):** Implements `BufferedReader` and `BufferedWriter` to ensure data persistence in a `tasks.txt` file.
+* **Exception Handling:** Uses `try-catch` blocks to handle invalid user inputs and file-reading errors safely.
+* **Modular Logic:** Separates concerns into Model (`Task`), Logic (`TaskManager`), Utility (`FileHandler`), and Driver (`Main`) classes.
 
 ##  Features
+* **Add Tasks:** Set names, deadlines, and priorities (High/Medium/Low).
+* **Track Status:** Mark tasks as "Completed" by their unique ID.
+* **Persistence:** Tasks remain saved even after closing the program.
+* **Productivity Report:** Automatic calculation of your task completion percentage.
 
-* **Task Management:** Add, View, Mark as Completed, and Delete tasks.
-* **Priority System:** Categorize tasks by High, Medium, or Low priority.
-* **Data Persistence:** All tasks are saved to a `tasks.txt` file, so your data is never lost when the program closes.
-* **Productivity Analytics:** Generates a real-time report showing your completion percentage and pending workload.
-* **OOP Design:** Built using clean Object-Oriented Programming principles.
+##  How to Set Up and Run
+*Someone who has never seen this project can run it by following these steps:*
 
-##  Technical Stack
-
-* **Language:** Java (Core Java)
-* **Data Structures:** ArrayList for dynamic task management.
-* **File I/O:** Java File Handling (`BufferedWriter`, `BufferedReader`) for data storage.
-* **Architecture:** Modular design with separate Model, Logic, and Utility classes.
-
-##  Project Structure
-
-* `Main.java`: The entry point containing the interactive menu.
-* `Task.java`: The model class representing a Task object.
-* `TaskManager.java`: Handles the business logic (adding, deleting, and calculating productivity).
-* `FileHandler.java`: Manages saving and loading data from the local text file.
-
-##  How to Run
-
-### Option 1: Run Online (Replit)
-1. Import this repository into [Replit](https://replit.com).
-2. Click the **Run** button.
-3. Use the **Console** tab on the right to interact with the menu.
-
-### Option 2: Run Locally (Terminal/CMD)
-1. Ensure you have **JDK** installed.
-2. Clone this repository:
+1. **Prerequisites:** Ensure you have the Java Development Kit (JDK) installed.
+2. **Download:** Clone this repository or download the `.java` files.
+3. **Compile:** Open your terminal/command prompt in the project folder and type:
    ```bash
+   javac *.java
    git clone [https://github.com/Harsh1510/smart-task-tracker.git](https://github.com/Harsh1510/smart-task-tracker.git)
